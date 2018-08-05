@@ -1,0 +1,52 @@
+All the bellow are done in one repository, i.e. "Angular6". 2 branches from it("Practice", "Projects").
+In local: (D:/CodeReference/Angular6)
+In remote: "Angular6".
+
+
+master [Fresh "Angular6" copy downloaded and installed]
+	->Practice
+		->Basic
+			->HelloWorld(Just Intro to HelloWorld)
+			->User(Design Impelementation started from here)
+				->NemariTheme(Itself Static)
+					->Dynamic
+						->From same component
+						->Config
+						->JSON
+						->Js
+						->DB
+				->Another user site SPA theme
+						->Config
+						.....
+			->Admin
+				->
+				->
+			->Mix(Compelet site: both user, admin signin/signup)
+		->Form
+			->Signin-Signup
+				->Signin
+				->Signup(Raw form)
+					->Validation
+						->Submit
+							->Get(Receive data in corresponding componenet)
+							->Save
+								->Data save into same componenet
+								->Config
+								->JSON
+								->Js
+								->DB
+							->Edit-Update
+			->ContactUs
+			->FeedBack
+		->Listing
+			->Data From Same Component
+			->Config
+			->JSON
+				->LoadMore
+				->Pagination
+			->Js
+			->DB
+				->Listing with features such as 1. View the detail(in separate page,In same page, In modal),2. Multiselection to perform actions such as Edit, Delete, Block/Unblock, Active/De-active, 3. Filter records, 4. Sort records
+	->Projects
+		->Project1
+		->Project2

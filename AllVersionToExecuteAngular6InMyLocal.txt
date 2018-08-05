@@ -1,0 +1,23 @@
+ng -v
+Angular CLI : 6.1.1
+Node : 8.11.3
+Os : win32 x64
+Angular:
+...
+Package				Version
+------------------------------------------
+@angular--devkit/architect	0.7.1
+@angular--devkit/core		0.7.1
+@angular--devkit/schematics	0.7.1
+@schematics/angular		0.7.1
+@schematics/update		0.7.1
+rxjs				6.2.2
+typescript			2.7.2
+
+
+
+npm -v
+6.2.0
+
+
+

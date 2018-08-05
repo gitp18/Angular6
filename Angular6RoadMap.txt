@@ -3,7 +3,7 @@ In local: (D:/CodeReference/Angular6)
 In remote: "Angular6".
 
 
-master [Fresh "Angular6" copy downloaded and installed]
+master [Fresh "Angular6" copy downloaded and installed in Local]
 	->Practice
 		->Basic
 			->HelloWorld(Just Intro to HelloWorld)

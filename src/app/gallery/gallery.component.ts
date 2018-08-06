@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-gallery',
@@ -6,18 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
-	galleries = [
-			{img: "assets/namari-by-shapingrain/images/gallery-images/gallery-image-1.jpg"},
-			{img: "assets/namari-by-shapingrain/images/gallery-images/gallery-image-2.jpg"},
-			{img: "assets/namari-by-shapingrain/images/gallery-images/gallery-image-3.jpg"},
-			{img: "assets/namari-by-shapingrain/images/gallery-images/gallery-image-4.jpg"},
-			{img: "assets/namari-by-shapingrain/images/gallery-images/gallery-image-5.jpg"},
-			{img: "assets/namari-by-shapingrain/images/gallery-images/gallery-image-6.jpg"}
-			];
+	galleries = [];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private config : ConfigService) { }
+	getGallery(){return this.config.getConfig().galleries;}
+  ngOnInit() {this.galleries = this.getGallery();
   }
 
 }

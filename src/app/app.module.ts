@@ -13,6 +13,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { ConfigService } from './config.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

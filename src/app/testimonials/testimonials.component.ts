@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-testimonials',
@@ -6,18 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testimonials.component.css']
 })
 export class TestimonialsComponent implements OnInit {
-	testimonials = {
-		tagLine: "FEEDBACK",
-		title: "What our customers are saying",
-		testimonial: [
-						{userImg: "../assets/namari-by-shapingrain/images/user-images/user-1.jpg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", by: "John Doe - Happy Customer"},
-						{userImg: "../assets/namari-by-shapingrain/images/user-images/user-2.jpg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", by: "Roslyn Doe - Happy Customer"},
-						{userImg: "../assets/namari-by-shapingrain/images/user-images/user-3.jpg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", by: "Thomas Doe - Happy Customer"}
-					]
-	};
-  constructor() { }
-
-  ngOnInit() {
+	testimonials = {};
+  constructor(private config:ConfigService) { }
+	getTestimonial(){return this.config.getConfig().testimonials;}
+  ngOnInit() {this.testimonials = this.getTestimonial();
   }
 
 }

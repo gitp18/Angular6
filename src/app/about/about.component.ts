@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-about',
@@ -17,8 +18,10 @@ export class AboutComponent implements OnInit {
 					{icon: "rocket", title: "Parallax Effect", description: "Has ne tritani atomorum conclusionemque, in dolorum volumus cotidieque eum. At vis choro neglegentur iudico"}
 				]
 	};
-  constructor() { }
+  constructor(private config: ConfigService) { }
+	getAbout(){return this.config.getConfig().about;}
   ngOnInit() {
+	this.about = this.getAbout();
 	}
 	
 }

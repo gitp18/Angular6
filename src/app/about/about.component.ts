@@ -17,10 +17,8 @@ export class AboutComponent implements OnInit {
 					{icon: "rocket", title: "Parallax Effect", description: "Has ne tritani atomorum conclusionemque, in dolorum volumus cotidieque eum. At vis choro neglegentur iudico"}
 				]
 	};
-
   constructor() { }
-
   ngOnInit() {
-  }
-
+	}
+	
 }

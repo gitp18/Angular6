@@ -9,8 +9,7 @@ master [Fresh "Angular6" copy downloaded and installed in Local]
 			->HelloWorld(Just Intro to HelloWorld)
 			->User(Design Impelementation started from here)
 				->NemariTheme(Static site,devided into componenets)
-					->Dynamic
-						->From same component
+					->Dynamic(From corresponding component)
 						->ConfigService
 						->JSON
 						->Js

@@ -8,13 +8,18 @@ master [Fresh "Angular6" copy downloaded and installed in Local]
 		->Basic
 			->HelloWorld(Just Intro to HelloWorld)
 			->User(Design Impelementation started from here)
-				->NemariTheme(Itself Static)
+				->NemariTheme(Static site,devided into componenets)
 					->Dynamic
 						->From same component
-						->Config
+						->ConfigService
 						->JSON
 						->Js
 						->DB
+						->Internationalisation(i18n)
+					->Routing
+						->PageNotFound (Add a 404 component for pages not found)
+						->
+					
 				->Another user site SPA theme
 						->Config
 						.....
@@ -47,6 +52,13 @@ master [Fresh "Angular6" copy downloaded and installed in Local]
 			->Js
 			->DB
 				->Listing with features such as 1. View the detail(in separate page,In same page, In modal),2. Multiselection to perform actions such as Edit, Delete, Block/Unblock, Active/De-active, 3. Filter records, 4. Sort records
+		->SIDU(Add,Edit,Delete,Listing)
+			->(get & set in the same html)
+			->in the same component
+			->in json
+			->in js
+			->in db
+
 	->Projects
 		->Project1
 		->Project2
